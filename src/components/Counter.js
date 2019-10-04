@@ -20,7 +20,7 @@ export default function Counter({ user, countLimit }) {
   return (
     <div style={{ borderColor: 'red' }} className='component'>
       <h5>{user}&apos;s count:</h5>
-      <div>The count is {count}</div>
+      <div    data-testid='countDiv'>The count is {count}</div>
       <button data-testid='incButton' onClick={increment}>increment</button>
       <button data-testid='decButton' onClick={decrement}>decrement</button>
       <button data-testid='resetButton' onClick={reset}>reset</button>
