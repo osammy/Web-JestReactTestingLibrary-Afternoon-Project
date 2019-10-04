@@ -28,6 +28,21 @@ describe('sum', () => {
 
 describe('multiply', () => {
   // write tests! <================================================
+  it('can multiply two numbers', () => {
+    expect(helpers.multiply(3, 2)).toBe(6);
+  });
+
+  it('throws error if fed something which is not a number', () => {
+    expect(() => helpers.multiply('1', '2')).toThrow();
+  });
+
+  it('throws error if fed no arguments', () => {
+    expect(() => helpers.multiply()).toThrow();
+  });
+
+  it('throws error if fed one arguments', () => {
+    expect(() => helpers.multiply(2)).toThrow();
+  });
 });
 
 describe('personMaker', () => {
@@ -40,5 +55,8 @@ describe('personMaker', () => {
       });
   });
 
+
   // write more tests! <===========================================
 });
+
+

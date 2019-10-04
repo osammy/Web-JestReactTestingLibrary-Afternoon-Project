@@ -33,3 +33,14 @@ export function personMaker(name, age) {
 }
 
 // BUILD YOUR OWN UTILITY FUNCTIONS AND TEST THEM OUT!
+
+
+export const axios = {
+  get: (text) => {
+    return new Promise((resolve,reject) => {
+      setTimeout(()=>{
+        resolve(text)
+      },1000)
+    })
+  }
+}
